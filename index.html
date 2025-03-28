@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Barányiová - product page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Poznejte budoucnost fotografie.">
+    <script src="script.js" defer> </script>   
+</head>
+
+<body class="light-theme">
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark/light theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="logo">
+                <h1><span>Pixel</span>Pro X1</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link">Domů</a></li>
+                    <li><a href="#features" class="nav-link">Funkce</a></li>
+                    <li><a href="#specs" class="nav-link">Technické specifikace</a></li>
+                    <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                    <li><a href="#pricing" class="nav-link">Cena</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#features" class="mobile-nav-link">Funkce</a></li>
+            <li><a href="#specs" class="mobile-nav-link">Technické specifikace</a></li>
+            <li><a href="#gallery" class="mobile-nav-link">Galerie</a></li>
+            <li><a href="#pricing" class="mobile-nav-link">Cena</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="parallax-container">
+        <!-- Background Video -->
+        <video class="parallax-bg" autoplay loop muted playsinline preload="auto" poster="assets/hero_fallbackbcg.png">
+            <source src="assets/hero_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="parallax-overlay"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-headline">Budoucnost fotografie</h1>
+                <a href="#pricing" class="cta-button">Objev PixelPro X1</a>
+            </div>
+            <!-- Hero Image Container -->
+            <div class="hero-image-container">
+                <div class="hero-image">
+                    <img src="assets/hero_cam.png" alt="PixelPro X1 Camera" id="heroImage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Revoluční funkce</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="feature-card">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Procesor nové generace</h3>
+                            <p>Osazen procesorem X1, který je schopen zpracovávat vysokorychlostní série snímků i 4K
+                                video s vysokým rozlišením. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="feature-card">
+                            <i class="fas fa-battery-full"></i>
+                            <h3>Výdrž baterie</h3>
+                            <p>Zachyťte až 1,200 snímků nebo 4 hodiny 4K videa na jedno nabití.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="feature-card">
+                            <i class="fas fa-wifi"></i>
+                            <h3>Bez kompromisů</h3>
+                            <p>Vestavěné WiFi 6E a Bluetooth 5.2 pro okamžitý přenos do jakéhokoliv zařízení.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="feature-card">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h3>Bleskový autofocus</h3>
+                            <p>Systém automatického ostření dokáže rozpoznávat širokou škálu objektů.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button prev" aria-label="Previous feature"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="carousel-button next" aria-label="Next feature"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs">
+        <div class="container">
+            <h2 class="section-title">Technické specifikace</h2>
+            <div class="specs-grid">
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Sensor</h3>
+                    <p>50.1MP Full-Frame EXMOR R CMOS</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>ISO</h3>
+                    <p>100-51,200 (možnost rozšíření to 50-204,800)</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Video</h3>
+                    <p>8K 30p, 4K 120p, FHD 240p</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Stabilizace</h3>
+                    <p>5-axis, 8 stops</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Rychlost snímání</h3>
+                    <p>1/8000s do 30s, Bulb</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Burst Mode</h3>
+                    <p>30fps s plným AF/AE trackováním</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Úložiště</h3>
+                    <p>Duální CFexpress</p>
+                </div>
+                <div class="spec-card" data-animation="fade-in">
+                    <h3>Display</h3>
+                    <p>3.2" 2.1M-dot dotykový display</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Demo Section (Updated) -->
+    <section id="product-demo">
+        <div class="container">
+            <h2 class="section-title">Seznamte se PixelPro X1</h2>
+            <div class="product-video-container">
+                <video class="product-video" autoplay loop muted playsinline preload="auto"
+                    poster="assets/product_fallback.jpg">
+                    <source src="assets/PixelPRO X1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="product-video-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Co vyfotíte s PixelPro X1?</h2>
+            <div class="gallery-tabs">
+                <button class="tab-button active" data-category="all">Vše</button>
+                <button class="tab-button" data-category="portrait">Portrét</button>
+                <button class="tab-button" data-category="landscape">Krajina</button>
+                <button class="tab-button" data-category="night">Noční režim</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="portrait">
+                    <img src="assets/portrait_1.jpg" alt="Portrét 1">
+                    <div class="gallery-overlay">
+                        <h3>Portrétní režim</h3>
+                        <p>f/1.4, 1/125s, ISO 100</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="assets/landscape_1.jpg" alt="Krajina 1">
+                    <div class="gallery-overlay">
+                        <h3>Kopcovitá krajina</h3>
+                        <p>f/8, 1/250s, ISO 200</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="night">
+                    <img src="assets/night_1.png" alt="Noční foto 1">
+                    <div class="gallery-overlay">
+                        <h3>Noční park</h3>
+                        <p>f/2.8, 2s, ISO 800</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="assets/portrait_2.jpg" alt="Portét 2">
+                    <div class="gallery-overlay">
+                        <h3>V přirozeném světle</h3>
+                        <p>f/2, 1/200s, ISO 100</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="assets/landscape_2.jpg" alt="Krajina 2">
+                    <div class="gallery-overlay">
+                        <h3>Lesní potok</h3>
+                        <p>f/11, 1/60s, ISO 100</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="night">
+                    <img src="assets/night_2.png" alt="Noční foto 2">
+                    <div class="gallery-overlay">
+                        <h3>Neonový nález</h3>
+                        <p>f/2.8, 30s, ISO 3200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing/CTA Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title">Získejte svůj PixelPro už dnes</h2>
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <h3>PixelPro X1 základní verze</h3>
+                    <p class="price-reveal"><span class="currency">Kč</span><span class="amount">29 000</span></p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PixelPro X1 Camera Body</li>
+                        <li><i class="fas fa-check"></i> Baterie + Nabíječka</li>
+                        <li><i class="fas fa-check"></i> 64GB CFexpress paměťová karta</li>
+                        <li><i class="fas fa-check"></i> Popruh</li>
+                        <li><i class="fas fa-check"></i> Dvouletá záruka</li>
+                    </ul>
+                    <button class="pulse-button">Předobjednávka</button>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="featured-badge">Top poměr ceny a kvality</div>
+                    <h3>PixelPro X1 Pro Kit</h3>
+                    <p class="price-reveal"><span class="currency">Kč</span><span class="amount">48 000</span></p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PixelPro X1 Camera Body</li>
+                        <li><i class="fas fa-check"></i> 24-70mm f/2.8 Pro čočka</li>
+                        <li><i class="fas fa-check"></i> Extra baterie + duální nabíječka</li>
+                        <li><i class="fas fa-check"></i> 128GB CFexpress paměťová karta</li>
+                        <li><i class="fas fa-check"></i> Prémiová taška</li>
+                        <li><i class="fas fa-check"></i> Prodloužená tříletá záruka</li>
+                    </ul>
+                    <button class="pulse-button">Předobjednávka</button>
+                </div>
+            </div>
+            <p class="shipping-note">Předobjednávky odesíláme 15. května 2025. Doprava zdarma.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span>Pixel</span>Pro X1</h2>
+                    <p>Nová definice profesionální fotografie</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Rychlá navigace</h3>
+                    <ul>
+                        <li><a href="#features">Funkce</a></li>
+                        <li><a href="#specs">Technické specifikace</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#pricing">Cena</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Více skvého obsahu</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Andrea Barányiová, 2025. Demo produktová stránka</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
